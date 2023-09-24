@@ -591,6 +591,7 @@ S:AddCallbackForAddon("Auc-Advanced", "Auc-Advanced", function()
 		end)
 	end
 
+	--[[
 	local Scan = AucAdvanced.Scan
 	if Scan then
 		hooksecurefunc(Scan , "ProgressBars", function(self)
@@ -602,7 +603,7 @@ S:AddCallbackForAddon("Auc-Advanced", "Auc-Advanced", function()
 
 			self.isSkinned = true
 		end)
-	end
+	end --]]
 
 	if AucAdvanced.Buy then
 		AucAdvanced.Buy.Private.Prompt.Frame:SetTemplate("Transparent")

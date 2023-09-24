@@ -23,8 +23,9 @@ S:AddCallbackForAddon("Carbonite", "Carbonite", function()
 		return clr
 	end
 
-	local borderColor = ColorConvert(unpack(E.media.bordercolor))
-	local backdropColor = ColorConvert(unpack(E.media.backdropfadecolor))
+	local borderColor = ColorConvert(0.06, 0.06, 0.06, 0) --ColorConvert(unpack(E.media.bordercolor))
+	--local backdropColor = ColorConvert(unpack(E.media.backdropfadecolor))
+	local backdropColor = ColorConvert(0.06, 0.06, 0.06, 0)
 
 	local backdrop
 	if E.private.general.pixelPerfect then
